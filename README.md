@@ -1,5 +1,77 @@
-MoodLens: A Transformer-Powered Sentiment AnalyzerMoodLens is an interactive web application that leverages a pre-trained transformer model to perform sentiment analysis on user-provided text. It is built using Python, Streamlit, and the Hugging Face Transformers library, offering a simple yet powerful demonstration of modern natural language processing (NLP) capabilities.✨ FeaturesReal-time Sentiment Analysis: Instantly classify text as positive, negative, or neutral.Confidence Scoring: Get a numerical score representing the model's confidence in its prediction.Intuitive UI: A clean and user-friendly interface powered by Streamlit for easy interaction.Reusable Components: The project is structured with modular Python files for clear organization and reusability.🚀 Getting StartedPrerequisitesTo run this application, you need to have Python installed on your system. It is recommended to use a virtual environment.InstallationInstall the required libraries:The project relies on transformers, torch, and streamlit. You can install them using pip.pip install -r requirements.txt
-If the requirements.txt file is empty, you can manually install the dependencies:pip install streamlit transformers torch
-Running the ApplicationThere are two ways to use the application:1. Streamlit Web AppTo run the interactive web application, execute the app.py file using Streamlit:streamlit run app.py
-This will launch the application in your default web browser.2. Command-Line Interface (CLI)For a simple command-line version, you can run main.py:python main.py
-This will start a prompt in your terminal where you can enter text for analysis. Type exit to quit.📂 Project Structureapp.py: The main Streamlit application file that handles the web UI.main.py: A command-line interface for sentiment analysis.sentiment_classifier.py: Contains the core logic for loading the pre-trained model and performing sentiment analysis.tokenization.py: Manages the tokenization process for converting text into a format the model understands.Embedding.py: Generates a vector representation (embedding) of the input text.utils.py: A utility file for saving results to a JSON file.post_sentiment.json: A sample output file containing analysis results.requirements.txt: Lists the Python dependencies required for the project.
+
+# **MoodLens: Transformer-Powered Sentiment Analyzer**
+
+**MoodLens** is an interactive web application that harnesses the power of pre-trained transformer models to perform accurate sentiment analysis on any user-provided text. Built with **Python**, **Streamlit**, and **Hugging Face Transformers**, MoodLens demonstrates the capabilities of modern NLP in a clean, intuitive interface.
+
+---
+
+## ✨ **Features**
+
+* **Real-time Sentiment Analysis**: Instantly classify text as **positive**, **negative**, or **neutral**.
+* **Confidence Scoring**: Receive a numerical confidence score for each prediction.
+* **User-Friendly Interface**: A sleek, interactive **Streamlit** UI for seamless interaction.
+* **Modular Architecture**: Structured Python files for clarity, maintainability, and reusability.
+
+---
+
+## 🚀 **Getting Started**
+
+### **Prerequisites**
+
+* Python 3.8+ installed on your system.
+* Recommended: Use a **virtual environment** for dependency management.
+
+### **Installation**
+
+Install the required Python libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+If `requirements.txt` is empty, manually install:
+
+```bash
+pip install streamlit transformers torch
+```
+
+---
+
+### **Running the Application**
+
+**1. Streamlit Web App**
+Launch the interactive web app in your browser:
+
+```bash
+streamlit run app.py
+```
+
+**2. Command-Line Interface (CLI)**
+For terminal-based interaction:
+
+```bash
+python main.py
+```
+
+Enter text for analysis. Type `exit` to quit.
+
+---
+
+## 📂 **Project Structure**
+
+| File                      | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| `app.py`                  | Main Streamlit application handling the web UI                      |
+| `main.py`                 | CLI interface for sentiment analysis                                |
+| `sentiment_classifier.py` | Core logic for loading the pre-trained model and making predictions |
+| `tokenization.py`         | Handles tokenization of input text                                  |
+| `embedding.py`            | Generates vector representations (embeddings) of text               |
+| `utils.py`                | Utility functions, including saving results to JSON                 |
+| `post_sentiment.json`     | Sample output file                                                  |
+| `requirements.txt`        | Lists project dependencies                                          |
+
+---
+
+MoodLens is the perfect starting point for exploring NLP, sentiment analysis, and transformer models in an interactive and practical way.
+
+---
